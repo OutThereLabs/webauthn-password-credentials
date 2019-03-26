@@ -1,0 +1,18 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "tsc && webpack-dev-server 'mocha-loader!./dist/credentials.test.js' --hot --inline --output-filename credentials.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha-loader": "^2.0.1",
+    "typescript": "^3.3.4000",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "webauthn-credentials": "file:.."
+  }
+}

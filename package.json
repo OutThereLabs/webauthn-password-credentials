@@ -1,0 +1,31 @@
+{
+  "name": "webauthn-credentials",
+  "version": "0.1.0",
+  "description": "WebAuthN compatable API for traditional credentials.",
+  "scripts": {
+    "prepack": "tsc",
+    "test": "mocha --reporter spec --require ts-node/register 'src/**/*.test.ts'"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
+    "@types/webappsec-credential-management": "^0.3.10",
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2",
+    "ts-node": "^8.0.3",
+    "tsify": "^4.0.1",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "@types/crypto-js": "^3.1.43",
+    "bignumber": "^1.1.0",
+    "jsrsasign": "^8.0.12",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
